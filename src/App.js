@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Tooltip } from "react-tooltip";
+import { ThemeProvider } from "styled-components";
+import "./App.css";
+import { AppContainer, GlobalStyle } from "./App.styles";
+import Homepage from "./pages/Homepage/Homepage.component";
+import { theme } from "./utils/theme";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<ThemeProvider theme={theme}>
+			<GlobalStyle whiteColor />
+			<AppContainer>
+				<Homepage />
+			</AppContainer>
+		</ThemeProvider>
+	);
+};
 
 export default App;
