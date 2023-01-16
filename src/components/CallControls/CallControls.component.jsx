@@ -6,7 +6,7 @@ import { BsPeopleFill } from "react-icons/bs";
 import { MdScreenShare } from "react-icons/md";
 import { ImPhoneHangUp } from "react-icons/im";
 import { theme } from "../../utils/theme";
-import CallControlsTooltips from "./CallControlsTooltips.component";
+import CallControlsTooltips from "./CallControls.tooltips";
 
 const CallControls = () => {
 	return (
@@ -32,11 +32,14 @@ const CallControls = () => {
 				</Thumbnail>
 			</span>
 			<span id="call" data-tooltip-content="Leave call">
-				<Thumbnail backgroundColor={theme.dropCallColor}>
+				<Thumbnail
+					backgroundColor={theme.dropCallColor}
+					hoverColor={theme.dropCallHoverColor}
+				>
 					<ImPhoneHangUp />
 				</Thumbnail>
 			</span>
-      <CallControlsTooltips/>
+			<CallControlsTooltips />
 		</CallControlsContainer>
 	);
 };
