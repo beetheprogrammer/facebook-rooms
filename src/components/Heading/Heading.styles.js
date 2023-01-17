@@ -4,7 +4,7 @@ export const HeadingContainer = styled("div")`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-  padding: .81rem .9rem;
+  padding: .97rem .9rem;
 
 	> div {
 		display: flex;
@@ -15,8 +15,6 @@ export const HeadingContainer = styled("div")`
 
 export const HeadingControlsContainer = styled("div")`
 	gap: .5rem !important;
-  /* background-color: red; */
   top: 10rem;
   margin-top: -.6rem;
-  /* position: absolute; */
 `;

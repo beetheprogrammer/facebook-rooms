@@ -5,4 +5,6 @@ export const theme = {
 	whiteColor: "#ffffff",
 	dropCallColor: "#ff443c",
 	dropCallHoverColor: "#FF817A",
+	facebookColor: "#429AFF",
+	facebookColorHover: "#58A4FF",
 };

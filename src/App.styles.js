@@ -13,4 +13,14 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
+
+  h2,p{
+    margin: 0;
+  }
+
+  button{
+    border: none;
+    font-size: inherit;
+    color: inherit;
+  }
 `;
