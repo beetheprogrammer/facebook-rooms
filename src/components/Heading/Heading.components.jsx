@@ -6,8 +6,14 @@ import { TbDots } from "react-icons/tb";
 import { HiFaceSmile } from "react-icons/hi2";
 import { TbScribble } from "react-icons/tb";
 import Thumbnail from "../Thumbnail/Thumbnail.component";
-import { HeadingContainer, HeadingControlsContainer } from "./Heading.styles";
+import {
+  CallReactions,
+	HeadingContainer,
+	HeadingControlsContainer,
+	ReactionsBox,
+} from "./Heading.styles";
 import HeadingTooltips from "./Heading.tooltips";
+import Reactions from "../Reactions/Reactions.component";
 
 const Heading = () => {
 	return (
@@ -34,11 +40,14 @@ const Heading = () => {
 						<TbScribble />
 					</Thumbnail>
 				</span>
-				<span id="reactions" data-tooltip-content="Reactions">
+				<CallReactions>
 					<Thumbnail backgroundColor="transparent" backgroundOnHover>
 						<HiFaceSmile />
 					</Thumbnail>
-				</span>
+					<ReactionsBox>
+            <Reactions/>
+          </ReactionsBox>
+				</CallReactions>
 				<span id="more" data-tooltip-content="More">
 					<Thumbnail backgroundColor="transparent" backgroundOnHover>
 						<TbDots />

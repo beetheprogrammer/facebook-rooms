@@ -1,11 +1,10 @@
 import React from 'react'
 import { ImageThumbnailContainer, ImgThumbnail } from './ImageThumbnail.styles';
-import Pic from "../../utils/images/solacePic.jpg"
 
-const ImageThumbnail = () => {
+const ImageThumbnail = ({pic}) => {
   return (
 		<ImageThumbnailContainer>
-			<ImgThumbnail src={Pic} />
+			<ImgThumbnail src={pic} />
 		</ImageThumbnailContainer>
 	);
 }
